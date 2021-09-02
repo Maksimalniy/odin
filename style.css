@@ -36,6 +36,7 @@
     background-color: #FFFFFF;
     border-bottom: 1px solid #D9FFF5;
     justify-content: space-between;
+    align-content: center ;
     position: fixed;
     z-index: 1;
 }
@@ -66,9 +67,14 @@
         position:  relative;
         max-height: 52px;
     }
-    .header__left .btn {
-        margin-right: 16px;
-    }
+    @media (min-width: 768px) {
+        
+    .logo::before {
+        content: url(ic/divider.svg);
+        top: -10px;
+        position: relative;
+        margin: 0 20px;
+    } }
     .header__mid-buttons {
         display: none;
         
@@ -104,13 +110,18 @@
     .btn__menu {
         background: url('ic/burger.png');
     }
+    @media (max-width:767px) {
+        .btn__menu {
+            margin-right: 16px;
+        }
+    }
     .btn__right {
         display: flex;
-        padding-right: 30px;
-    }
+        margin-right: 16px;
+    }    
     .btn__right::before {
-        content: url(divider.svg);
-        margin: 5px 20px;
+        content: url(ic/divider.svg);
+        margin: 5px 16px;
     }
     .btn_repair {
         background: url('ic/repair.png');
@@ -129,19 +140,16 @@
     .btn_profile {
         background: url('ic/profile.png');
     }
-    main {
+    .main {
         padding-top: 88px;
         max-width: 100%;
         min-width: 320px;
-        background-color: #F8F8F8;
-        
     }
   @media (min-width: 1120px) {
-      main {
+      .main {
           padding: 0;
       }
   }
-    
     .title {
         top: 24px;
         position: relative;
@@ -149,7 +157,6 @@
         margin-left: 16px;
         display: flex;
         align-items: center;
-
     }
 
     .title:before {
@@ -161,7 +168,29 @@
           border-top-right-radius: 4px;
           left: -16px;
         }
-.main__button {
+.background {
+    background-color: #F8F8F8;
+    height: calc(100vh - 416px);
+    max-width: 1120px;
+}
+
+
+.main {
+    max-width: 1120px;
+    background-color: #F8F8F8;
+}
+@media (min-width: 1120px) {
+    .main {
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .background {
+        margin-left:auto;
+        margin-right: auto;
+        
+    }
+}
+.main__buttons {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -171,7 +200,7 @@
     margin-top: 32px;
     margin-left: 16px;
 }
-.main__button_text {
+.main__buttons_text {
     font-size: 17px;
     line-height: 24px;
     color: #7E7E82;
@@ -181,7 +210,15 @@
     cursor: pointer;
     padding: 10px 18px; 
 }
-.main__button_text:focus {
+@media (min-width:1120px) {
+    .main__buttons_text {
+        padding:10px 23px;
+    }
+    .main__buttons {
+        flex-wrap: wrap;
+    }
+}
+.main__buttons_text:focus {
     padding: 8px 16px;
     border: 2px solid #B8FFEC;
     border-radius: 6px; 
@@ -196,7 +233,6 @@
     min-width: 320px;
     font-size: 14px;
     line-height: 18px;
-    border-bottom: 1px solid #D9FFF5;
     padding-bottom: 24px;
 }
 @media (min-width: 768px) {
@@ -242,10 +278,19 @@
     width: 100%;
     min-width: 320px;
     max-width:600px;
+    margin-right: 25px;
+    
+}
+@media  (min-width: 768px) {
+    .main__img img {
+        border-radius: 5px;
+        width: 100%;
+        
+    }
 }
 .main__img img {
     width: 100%;
-    height: 220px;
+    height: auto;
     
 }
 .main__more-box {
