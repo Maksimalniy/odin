@@ -7,78 +7,61 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+<div class="menu">
+<div>
+    <div class="menu__header header">
         <div class="header__left">
-            <button class="btn btn__menu">
-            </button>
-            <a class="logo" href="#"><img src="ic/logo.svg" alt="logo" ></a>
+            <button class="btn header__button_hide header__button"></button>
+            <a href="" class="header__logo">
+                <img src="img/logo.svg" alt="logo">
+            </a>
         </div>
         <div class="header__right">
-            <div class="header__mid-buttons">
-                <button class="btn btn_call"></button>
-                <button class="btn btn_chat"></button>
-                <button class="btn btn_profile"></button>
-            </div>
-            <div class="btn__right">
-                <button class="btn btn_repair"></button>
-                <button class="btn btn_checkstatus"></button>
-            </div>
-        </div>
-    </header>
-<div class="main">
-        <div class="title">
-            <h1>Услуги и сервисы</h1>
-            <div class="set-buttons">
-                <label for="repair" class="label">Оставить заявку</label>
-                <button id="repair" class="btn btn_repair"></button>
-                <label for="check" class="label">Статус ремонта</label>
-                <button id="check" class="btn btn_checkstatus"></button>
-            </div>
-        </div>
-      <div class="main__buttons">
-        <button class="main__buttons_text">
-            Ремонтируемые устройства
-        </button>
-        <button class="main__buttons_text">
-            Дополнительные услуги
-        </button>
-        <button class="main__buttons_text">
-            Цены на услуги
-        </button>
-        <button class="main__buttons_text">
-            Адреса сервисных центров
-        </button>
-        <button class="main__buttons_text">
-            Специальные цены
-        </button>
-        <button class="main__buttons_text">
-            Отзывы
-        </button>
-      </div>
-        <div class="main__description">
-            <div class="wrapper">
-            <input type="checkbox" id="text" class="main__more-box">
-            <label class="main__more-button" for="text">
-            </label>
-
-            <div class="main__description_text">
-            Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-            <br><br>
-            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-            <br><br>
-            Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-            <br><br>
-            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-            </div>
-            </div>
-            <div class="main__img">
-            <img src="ic/im23.png" alt="CPS-Company-LTD">
-        </div>
+        <button class="btn header__button_search header__button"></button>
         </div>
     </div>
-
-    <div class="background"> </div>
-
-
+    <div class="menu__nav">
+        <input type="radio" name="butt" id="1" class="menu__butt">
+        <label for="1" class="menu__label">Ремонт техники</label>
+        <input type="radio" name="butt" id="2" class="menu__butt">
+        <label for="2" class="menu__label">Услуги и сервисы</label>
+        <input type="radio" name="butt" id="3" class="menu__butt">
+        <label for="3" class="menu__label">Корпоративным клиентам</label>
+        <input type="radio" name="butt" id="4" class="menu__butt">
+        <label for="4" class="menu__label">Продавцам техники</label>
+        <input type="radio" name="butt" id="5" class="menu__butt">
+        <label for="5" class="menu__label">Партнерам</label>
+        <input type="radio" name="butt" id="6" class="menu__butt">
+        <label for="6" class="menu__label">Производителям</label>
+        <input type="radio" name="butt" id="7" class="menu__butt">
+        <label for="7" class="menu__label">Наши сервисные центры</label>
+        <input type="radio" name="butt" id="8" class="menu__butt">
+        <label for="8" class="menu__label">Контакты</label>
+    </div>
+</div>
+<div class="menu__footer">
+    <div class="footer__buttons">
+        <button class="footer__butt btn footer__butt_call"></button>
+        <button class="footer__butt btn footer__butt_chat"></button>
+        <button class="footer__butt btn footer__butt_man"></button>
+    </div>
+    <div class="footer__contact">
+        <a href="" class="footer__mail">
+            mail@cps.com
+        </a>
+        <a href="" class="footer__phone">
+            8 800 890 8900
+        </a>
+    </div>
+    <div class="footer__langs">
+        <input type="radio" name="lang" id="ru" class="footer__lang">
+        <label for="ru" class="footer__lang-radio">RU</label>
+        <input type="radio" name="lang" id="en" class="footer__lang">
+        <label for="en" class="footer__lang-radio">EN</label>
+        <input type="radio" name="lang" id="ch" class="footer__lang">
+        <label for="ch" class="footer__lang-radio">CH</label>
+    </div>
+</div>
+</div>
 </body>
 </html>
