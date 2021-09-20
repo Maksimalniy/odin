@@ -12,18 +12,18 @@
     font-style: normal;
 }
 @font-face {
-        font-family: 'TT Lakes Condensed';
-        src: url(./fonts/TTLakesCondensed-Regular.eot);
-        src: local("TT Lakes Condensed Regular"), local("TTLakesCondensed-Regular"), url(./fonts/TTLakesCondensed-Regular.eot?#iefix) format("embedded-opentype"), url(./fonts/TTLakesCondensed-Regular.woff) format("woff"), url(./fonts/TTLakesCondensed-Regular.ttf) format("truetype");
-        font-weight: normal;
-        font-style: normal;
-    }  
+    font-family: 'TT Lakes Condensed';
+    src: url(./fonts/TTLakesCondensed-Regular.eot);
+    src: local("TT Lakes Condensed Regular"), local("TTLakesCondensed-Regular"), url(./fonts/TTLakesCondensed-Regular.eot?#iefix) format("embedded-opentype"), url(./fonts/TTLakesCondensed-Regular.woff) format("woff"), url(./fonts/TTLakesCondensed-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}  
 @font-face {
-        font-family: 'TT Lakes Condensed Medium';
-        src: url(./fonts/TTLakesCondensed-Medium.eot);
-        src: local("TT Lakes Condensed Medium"), local("TTLakesCondensed-Medium"), url(./fonts/TTLakesCondensed-Medium.eot?#iefix) format("embedded-opentype"), url(./fonts/TTLakesCondensed-Medium.woff) format("woff"), url(./fonts/TTLakesCondensed-Medium.ttf) format("truetype");
-        font-weight: 500;
-        font-style: normal;
+    font-family: 'TT Lakes Condensed Medium';
+    src: url(./fonts/TTLakesCondensed-Medium.eot);
+    src: local("TT Lakes Condensed Medium"), local("TTLakesCondensed-Medium"), url(./fonts/TTLakesCondensed-Medium.eot?#iefix) format("embedded-opentype"), url(./fonts/TTLakesCondensed-Medium.woff) format("woff"), url(./fonts/TTLakesCondensed-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
     }
 .menu {
     display: flex;
@@ -59,25 +59,20 @@
     display:flex;
     align-items: center;
 }
-.menu__butt {
-    display: none;
-}
-.menu__butt:checked+.menu__label {
+a:focus {
     color: #7E7E82;
 } 
-.menu__butt:checked+.menu__label::before {
+.menu__label:hover::before, .menu__label:focus::before {
     position: absolute;
     content: "";
     border: 2px solid #41f6d7;
     height: 32px;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
-    left: -22px;
-    top: -4px;
+    left: -24px;
+    top:-6px;
 }
 .menu__nav {
-    display: flex;
-    flex-direction: column;
     font-family: 'TT Lakes Condensed Medium', sans-serif;
     font-size: 16px;
     color: #1B1C21;
@@ -87,16 +82,26 @@
     position: relative;
     cursor: pointer;
     margin-left: 24px;
-}
-.menu__label:not(:last-child) {
     margin-bottom: 32px;
+	text-decoration: none;
+	color: #1B1C21;
 }
 .menu__label:hover, a:hover {
-    text-shadow: 0px 0px 2px rgba(92, 81, 81, 0.35);
-    
+    text-shadow: 0px 0px 2px rgba(92, 81, 81, 0.35); 
 }
-.menu__butt:checked+.menu__label:hover {
+.menu__butt {
+    display: flex;
+    flex-direction: column;
+}
+.menu__butt:active:hover {
     text-shadow: none;
+}
+li {
+ list-style-type: none;
+}
+ul {
+    margin-left: 0; 
+    padding-left: 0;
 }
 .btn {
     width: 40px;
@@ -109,7 +114,7 @@
 }
 .btn:hover {
     box-shadow: 0 0 2px rgba(92, 81, 81, 0.75);
-    filter: contrast(120%);
+    filter: contrast(130%);
     transition: 0.3s;
 }
 .menu__footer {
@@ -123,15 +128,12 @@
 .footer__buttons :not(:first-child) {
     margin-left: 16px;
 }
-
 .footer__butt_call {
     background: url(img/call.png);
 }
-
 .footer__butt_chat {
     background: url(img/chat.png);
 }
-
 .footer__butt_man {
     background: url(img/profile.png);
 }
@@ -164,22 +166,22 @@
     font-family: 'TT Lakes Condensed Medium', sans-serif;
     margin-top: 40px;
     margin-left: 24px;
+	display: inline-block;
 }
 .footer__lang {
-    display: none;
+    margin-bottom: 32px;
+    margin-right: 7px;
     color:#1B1C21;
+    text-decoration: none;
 }
 .footer__lang-radio {
     cursor: pointer;
     filter: opacity(0.7);
     transition: 0.4s;
 }
-.footer__lang:checked+.footer__lang-radio {
+.footer__lang:active+.footer__lang-radio {
     color: #7E7E82;
     opacity: 0.8;
     filter: invert(80%);
     transition: 0.1s;
-}
-.footer__lang-radio:not(:last-child) {
-    margin-right: 7px;
 }
