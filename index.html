@@ -1,63 +1,56 @@
-<!DOCTYPE html>
-<html lang="ru">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7.0.2/swiper-bundle.min.css">
+    <title>Document</title>
 </head>
 <body>
-<div class="menu">
-<div>
-    <div class="menu__header header">
-        <div class="header__left">
-            <button class="btn header__button_hide header__button"></button>
-            <a href="" class="header__logo">
-                <img src="img/logo.svg" alt="logo">
-            </a>
-        </div>
-        <div class="header__right">
-        <button class="btn header__button_search header__button"></button>
-        </div>
-    </div>
-    <div class="menu__butt">
-    <nav class="menu__nav">
-        <ul>
-        <li class="menu__butt"><a href="" class="menu__label">Ремонт техники</a></li>
-        <li class="menu__butt"><a href="" class="menu__label">Услуги и сервисы</a></li>
-        <li class="menu__butt"><a href="" class="menu__label">Корпоративным клиентам</a></li>
-        <li class="menu__butt"><a href="" class="menu__label">Продавцам техники</a></li>
-        <li class="menu__butt"><a href="" class="menu__label">Партнерам</a></li>
-        <li class="menu__butt"><a href="" class="menu__label">Производителям</a></li>
-        <li class="menu__butt"><a href="" class="menu__label">Наши сервисные центры</a></li>
-        <li ><a href="" class="menu__label">Контакты</a></li>
-        </ul>
-    </nav>
-    </div>
+<div class="header-tech">
+<h1 class="header-tech__text">Ремонт техники различных брендов</h1>
 </div>
-<div class="menu__footer">
-    <div class="footer__buttons">
-        <button class="footer__butt btn footer__butt_call"></button>
-        <button class="footer__butt btn footer__butt_chat"></button>
-        <button class="footer__butt btn footer__butt_man"></button>
+<div class="content-wrapper">
+  <div class="slider-container">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="brands__item swiper-slide"><a href="" class="brands__link"><img src="img/Bitmap.png" alt="Lenovo"></a></div>
+      <div class="brands__item swiper-slide"><a href="" class="brands__link"><img src="img/Bitmap1.png" alt="Bosch"></a></div>
+      <div class="brands__item swiper-slide"><a href="" class="brands__link"><img src="img/Bitmap2.png" alt="Samsung"></a></div>
+      <div class="brands__item swiper-slide"><a href="" class="brands__link"><img src="img/Bitmap3.png" alt="HP"></a></div>
+      <div class="brands__item swiper-slide"><a href="" class="brands__link"><img src="img/Bitmap4.png" alt="Apple"></a></div>
+      <div class="brands__item swiper-slide"><a href="" class="brands__link"><img src="img/Bitmap5.png" alt="Acer"></a></div>
+      <div class="brands__item swiper-slide"><a href="" class="brands__link"><img src="img/Bitmap6.png" alt="ViewSonic"></a></div>
+      <div class="brands__item swiper-slide"><a href="" class="brands__link"><img src="img/Bitmap7.png" alt="Sony"></a></div>
+      <div class="brands__item swiper-slide"><a href="" class="brands__link"><img src="img/Bitmap.png" alt="Lenovo"></a></div>
+      <div class="brands__item swiper-slide"><a href="" class="brands__link"><img src="img/Bitmap1.png" alt="Bosch"></a></div>
+      <div class="brands__item swiper-slide"><a href="" class="brands__link"><img src="img/Bitmap2.png" alt="Samsung"></a></div>
     </div>
-    <div class="footer__contact">
-        <a href="mailto:mail@cps.com" class="footer__mail">
-            mail@cps.com
-        </a>
-        <a href="tel:88008908900" class="footer__phone">
-            8 800 890 8900
-        </a>
-    </div>
-    <div class="footer__langs">
-        <a href="#" class="footer__lang">
-        <label for="ru" class="footer__lang-radio">RU</label></a>
-        <a href="#" class="footer__lang">
-        <label for="en" class="footer__lang-radio">EN</label></a>
-        <a href="#" class="footer__lang">
-        <label for="ch" class="footer__lang-radio">CH</label></a>
-    </div>
+    <div class="swiper-pagination" style="position: static;"></div>
+  </div>
 </div>
+  <input type="checkbox" class="more-box" name="more" id="more">
+  <div class="brands">
+    <div class="brands__item"><a href="" class="brands__link"><img src="img/Bitmap.png" alt=""></a></div>
+    <div class="brands__item"><a href="" class="brands__link"><img src="img/Bitmap1.png" alt=""></a></div>
+    <div class="brands__item"><a href="" class="brands__link"><img src="img/Bitmap2.png" alt=""></a></div>
+    <div class="brands__item"><a href="" class="brands__link"><img src="img/Bitmap3.png" alt=""></a></div>
+    <div class="brands__item"><a href="" class="brands__link"><img src="img/Bitmap4.png" alt=""></a></div>
+    <div class="brands__item"><a href="" class="brands__link"><img src="img/Bitmap5.png" alt=""></a></div>
+    <div class="brands__item"><a href="" class="brands__link"><img src="img/Bitmap6.png" alt=""></a></div>
+    <div class="brands__item"><a href="" class="brands__link"><img src="img/Bitmap7.png" alt=""></a></div>
+
+    <div class="brands__item"><a href="" class="brands__link"><img src="img/Bitmap.png" alt=""></a></div>
+    <div class="brands__item"><a href="" class="brands__link"><img src="img/Bitmap1.png" alt=""></a></div>
+    <div class="brands__item"><a href="" class="brands__link"><img src="img/Bitmap2.png" alt=""></a></div>  
+  </div>
+  <label for="more" class="more-label"></label>
 </div>
+
+<script src="https://unpkg.com/swiper@7.0.2/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
